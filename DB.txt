@@ -1,0 +1,25 @@
+Création DB account
+-------------------------
+-> fait via l'utilitaire et ajoute le nom devant
+CREATE SCHEMA `account` ;
+
+
+CREATE TABLE `meylans_account`.`account` (
+  `id_account` INT NOT NULL,
+  `login` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_account`));
+
+-> fait via utilitaire et ajoute nom avant
+CREATE SCHEMA `score` ;
+
+CREATE TABLE `meylans_score`.`score` (
+  `id_score` INT NOT NULL,
+  `login` VARCHAR(45) NULL,
+  `score` INT NULL,
+  PRIMARY KEY (`id_score`));
+
+-création user meylans_snake
+Snake123EMF$$
+
+-ajout AI sur les id des tables

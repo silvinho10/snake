@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Snake Game">
+  <title>Module 133 Snake Game</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/styleLogin.css">
+  <script type="text/javascript" src="js/helpers/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/controllers/indexCtrl.js"></script>
+</head>
+<body>
+	<div id="app" class="app">
+		<div class="start-screen animated bounceIn">
+			<h3>Module 133 Snake Game</h3>
+		
+			<div class="options">
+				<h3>Choose Difficulty</h3>
+				<p class="end-score"></p>
+				<button data-difficulty="100" class="active">Easy</button>
+				<button data-difficulty="75">Average</button>
+				<button data-difficulty="50">Hard</button>
+			</div>
+			<button class="play-btn">Play</button>
+		</div>
+		<canvas></canvas>
+		<div class="score">0</div>
+	</div>
+	  
+	<button id="disconnect-button" class="disconnect-button" >Pseudo</button>
+	<!-- <button id="score-button" class="score-button" >Save Score</button>  -->
+	<button id="open-button" class="open-button">Login</button>
+	<div class="form-popup" id="myForm">
+		<div class="form-container">
+			<h1>Login</h1>
+		
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" id="email" required>
+		
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+		
+			<button id="connect" type="button" class="btn">Login</button>
+			<button id="close" type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</div>
+	</div>
+
+  <script src="js/services/snake.js"></script>
+</body>
+</html>
